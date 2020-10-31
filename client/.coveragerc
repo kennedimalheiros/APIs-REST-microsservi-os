@@ -1,0 +1,7 @@
+[run]
+  source = product
+  omit =
+      product/migrations/*.py
+      product/tests/*.py
+      product/wsgi.py
+      product/apps.py
