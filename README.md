@@ -14,16 +14,13 @@ Makefile já esta configurado para isso.
         
     cd server/
 
-- Execute o projeto SERVER crie o super usuário para adicionar os produtos pelo admin.
+- Execute o projeto SERVER, crie o super usuário para acessar o admin.
+
+- Ao executar o migrate o banco de dados será populado a partir de uma datamigration.
 
 
     make migrate
     make superuser
-
-- Popule o banco de dados do SERVER com o comando:
-  
-  
-    make populate
     make runserver
 
      
