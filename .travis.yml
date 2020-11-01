@@ -10,7 +10,8 @@ before_script:
   - python client/manage.py migrate
 
 script:
-  - coverage run client/manage.py test -v 3
+  - coverage run client/manage.py test product -v 3
+  - coverage run service/manage.py test product -v 3
 
 after_success:
   - coveralls
