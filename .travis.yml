@@ -1,0 +1,16 @@
+sudo: false
+language: python
+python:
+  - 3.8
+
+install:
+  - pip install -r requirements.txt
+
+before_script:
+  - python client/manage.py migrate
+
+script:
+  - coverage run client/manage.py test -v 3
+
+after_success:
+  - coveralls
