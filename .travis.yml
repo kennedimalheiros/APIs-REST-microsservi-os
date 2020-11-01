@@ -8,6 +8,7 @@ install:
 
 before_script:
   - python client/manage.py migrate
+  - python server/manage.py migrate
 
 script:
   - coverage run client/manage.py test product -v 3
