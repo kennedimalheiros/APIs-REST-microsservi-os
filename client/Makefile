@@ -12,3 +12,6 @@ superuser:
 
 shell:
 	docker-compose run web python manage.py shell
+
+build:
+	docker-compose build

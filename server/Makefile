@@ -12,3 +12,9 @@ superuser:
 
 shell:
 	docker-compose run web python manage.py shell
+
+populate:
+	docker-compose run web python manage.py populate_db
+
+build:
+	docker-compose build
